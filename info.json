@@ -1,0 +1,11 @@
+{
+    "name": "island_spawn",
+    "version": "0.1.1",
+    "title": "Island Spawn",
+    "author": "Teagonia",
+    "contact": "http://www.reddit.com/message/compose/?to=teagonia",
+    "homepage": "https://github.com/joshinils/island_spawn",
+    "factorio_version": "0.16",
+    "dependencies": ["base >= 0.16"],
+    "description": "This mod adds recipes to build everything from a small Island surrounded by water"
+}
