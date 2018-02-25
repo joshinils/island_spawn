@@ -23,7 +23,7 @@ local tree={
 }
 
 script.on_event(defines.events.on_built_entity, function(event)
-	if event.stack.name~="seedling" then
+	if not event.stack or event.stack.name~="seedling" then
 		return
 	end
 	
