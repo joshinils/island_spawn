@@ -21,6 +21,7 @@ local tree={
 	"tree-09-brown",      -- 4
 	"tree-09-red"         -- 4 rot
 }
+local tree_choices = #tree
 
 script.on_event(defines.events.on_built_entity, function(event)
 	if not event.stack or event.stack.name~="seedling" then
@@ -31,7 +32,7 @@ script.on_event(defines.events.on_built_entity, function(event)
 	event.created_entity.destroy()
 	
 	game.surfaces.nauvis.create_entity({
-		name=tree[math.floor(math.random()*21+1)], -- randomly from [1, 21]
+		name=tree[math.floor(math.random()*tree_choices+1)], -- randomly from [1, 21]
 		position=pos
 	})
 	
