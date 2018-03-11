@@ -12,7 +12,8 @@ data:extend{
 			height=64,
 			variation_count=1
 		}},
-		collision_box = {{-1, -1}, {1, 1}}
+		collision_box = {{-1, -1}, {1, 1}},
+		order=" "
 	},
 	{
 		type="item",
@@ -33,6 +34,7 @@ data:extend{
 		ingredients={{"raw-wood", 1}},
 		result="seedling",
 		result_count=1,
+		order=" ",
 		enabled=true
 	},
 	{
@@ -65,7 +67,8 @@ data:extend{
 			{"raw-wood", 5}
 		},
 		results={{type="fluid", name="sludge", amount=30}},
-		enabled=true
+		enabled=true,
+		order=" ",
 	}, -- 1 offshore pump produces 1200 water/sec
 	{
 		type='recipe',
