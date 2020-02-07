@@ -24,7 +24,7 @@ local tree={
 local tree_choices = #tree
 
 script.on_event(defines.events.on_built_entity, function(event)
-	if not event.stack or event.stack.name~="seedling" then
+	if not event.stack or not event.stack.valid_for_read or event.stack.name~="seedling" then
 		return
 	end
 	
