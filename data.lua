@@ -20,7 +20,6 @@ data:extend{
 		name="seedling",
 		icon="__island_spawn__/seedling.png",
 		icon_size=32,
-		flags={"goes-to-quickbar"},
 		subgroup="sludge-recipe",
 		order=" ",
 		place_result="sprout",
@@ -31,7 +30,7 @@ data:extend{
 		name="seedling-from-wood",
 		category='crafting',
 		energy_required=0.1,
-		ingredients={{"raw-wood", 1}},
+		ingredients={{"wood", 1}},
 		result="seedling",
 		result_count=1,
 		order=" ",
@@ -64,7 +63,7 @@ data:extend{
 		energy_required=3,
 		ingredients={
 			{type="fluid", name="water", amount=25}, 
-			{"raw-wood", 5}
+			{"wood", 5}
 		},
 		results={{type="fluid", name="sludge", amount=30}},
 		enabled=true,
@@ -238,7 +237,7 @@ data:extend{
 		energy_required=3,
 		ingredients={
 			{type="fluid", name="water", amount=26}, 
-			{"raw-wood", 3},
+			{"wood", 3},
 			{"gravel", 1}
 		},
 		results={{type="fluid", name="sludge", amount=30}},
@@ -256,7 +255,7 @@ data:extend{
 		energy_required=3,
 		ingredients={
 			{type="fluid", name="water", amount=28}, 
-			{"raw-wood", 1},
+			{"wood", 1},
 			{"sand", 1}
 		},
 		results={{type="fluid", name="sludge", amount=30}},
@@ -290,7 +289,7 @@ data:extend{
 --		subgroup="stone-processing",
 		energy_required=30,
 		ingredients={
-			{"raw-wood", 10},
+			{"wood", 10},
 		},
 		results={{type="fluid", name="crude-oil", amount=50}},
 --		order="b-s",
@@ -314,7 +313,7 @@ data:extend{
 		prerequisites = {"automation"},
 		unit={
 			count=1,
-			ingredients={{"science-pack-1", 0}},
+			ingredients={{"automation-science-pack", 1}},
 			time=1
 		}
 	},
@@ -336,7 +335,7 @@ data:extend{
 		prerequisites = {"automation-2", "stone-processing-1"},
 		unit={
 			count=1,
-			ingredients={{"science-pack-2", 0}},
+			ingredients={{"logistic-science-pack", 1}},
 			time=1
 		}
 	},
@@ -358,7 +357,7 @@ data:extend{
 		prerequisites = {"automation-3","stone-processing-2"},
 		unit={
 			count=1,
-			ingredients={{"science-pack-3", 0}},
+			ingredients={{"chemical-science-pack", 1}},
 			time=1
 		}
 	}

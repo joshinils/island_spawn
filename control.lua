@@ -115,7 +115,7 @@ end)
 script.on_event(defines.events.on_player_created, function(event)
 	player = game.players[event.player_index]
 	player.clear_items_inside()
-	player.insert{name="steel-axe", count=1, durability=100}
+--	player.insert{name="steel-axe", count=1, durability=100} -- good bye, old friend
 	player.force.set_spawn_position({x=10,y=1}, player.surface) 
 end)
 
